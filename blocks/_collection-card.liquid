@@ -1,12 +1,6 @@
-{% assign collection = closest.collection %}
 
-{% style %}
-  {% if request.visual_preview_mode %}
-    .collection-card {
-      min-width: 250px;
-    }
-  {% endif %}
-{% endstyle %}
+
+{% assign collection = closest.collection %}
 
 {% capture card_image %}
   {% content_for 'block',

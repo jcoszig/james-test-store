@@ -6,8 +6,7 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
- {
+ */{
   "sections": {
     "main": {
       "type": "product-information",
@@ -71,7 +70,6 @@
               "type": "group",
               "name": "Header",
               "settings": {
-                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -96,7 +94,6 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "placeholder": "",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -107,21 +104,22 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "product_title_eYVzTU": {
-                  "type": "product-title",
-                  "name": "t:names.title",
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
                   "settings": {
-                    "width": "fit-content",
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "color": "var(--color-foreground)",
+                    "color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -156,7 +154,7 @@
                 }
               },
               "block_order": [
-                "product_title_eYVzTU",
+                "text_xrnftG",
                 "price_tVjtKg"
               ]
             },
@@ -190,7 +188,6 @@
               "settings": {
                 "stacking": true,
                 "show_pickup_availability": false,
-                "gift_card_form": true,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,

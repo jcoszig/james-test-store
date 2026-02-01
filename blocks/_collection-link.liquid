@@ -1,3 +1,5 @@
+
+
 {%- doc -%}
   Renders a collection link block.
 
@@ -112,11 +114,12 @@
       --max-font-size: var(--font-size--5xl);
 
       [layout='spotlight'] & {
-        white-space: nowrap;
+        white-space: normal;
         scroll-snap-align: start;
+        text-wrap: pretty;
 
         span {
-          text-wrap: nowrap;
+          text-wrap: pretty;
         }
       }
     }
