@@ -99,7 +99,7 @@
                   "name": "t:names.menu",
                   "settings": {
                     "menu": "footer",
-                    "heading": "",
+                    "heading": "Quick Links",
                     "menu_spacing": 12,
                     "show_as_accordion": false,
                     "accordion_icon": "caret",
@@ -165,7 +165,7 @@
                   "name": "t:names.menu",
                   "settings": {
                     "menu": "footer-menu-right",
-                    "heading": "",
+                    "heading": "Info",
                     "menu_spacing": 12,
                     "show_as_accordion": false,
                     "accordion_icon": "caret",
