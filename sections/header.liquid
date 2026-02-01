@@ -462,6 +462,7 @@
   .header-section {
     position: relative;
     z-index: var(--layer-heightened);
+    border-bottom: solid 1px var(--color-foreground);
   }
 
   #header-group:has(#header-component[sticky]) {
@@ -671,6 +672,26 @@
     margin-inline: calc(-1 * var(--gap-xl) / 2);
     padding-inline: calc(var(--gap-xl) / 2);
   }
+
+  /* chevron arrow for top navigation items with child menus */
+  .menu-list__link.menu-arrow::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+  .menu-list__link[aria-expanded="true"].menu-arrow::after {
+    transform: rotate(-135deg) translateY(0);
+  }
+  .menu-list__link-title {
+    display: inline-flex;
+    align-items: center;
+  } 
 
   /* Set header paddings based on height setting */
   .header {
