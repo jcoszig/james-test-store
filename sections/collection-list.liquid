@@ -30,6 +30,7 @@
     {% render 'spacing-style', settings: section.settings %}
     {% render 'gap-style', value: section.settings.gap %}
   "
+  data-testid="collection-list"
 >
   <div class="section-resource-list__content">
     {%- content_for 'blocks' -%}
@@ -402,7 +403,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Shop by collection</h3>",
+                "text": "t:html_defaults.shop_by_collection",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "",
@@ -514,7 +515,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Shop by collection</h3>",
+                "text": "t:html_defaults.shop_by_collection",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "",
@@ -642,7 +643,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Shop by collection</h3>",
+                "text": "t:html_defaults.shop_by_collection",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "",
@@ -775,7 +776,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Shop by collection</h3>",
+                "text": "t:html_defaults.shop_by_collection",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
